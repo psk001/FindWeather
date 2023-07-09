@@ -28,7 +28,7 @@ const Search = ({ onSearchChange }) => {
         options
       }
 
-      console.log(returnData, typeof options)
+      console.log(returnData)
       return returnData;
     } catch (error) {
       console.error(error);
@@ -38,7 +38,7 @@ const Search = ({ onSearchChange }) => {
   return (
     <AsyncPaginate
       placeholder="Search for city"
-      debounce={3000}
+      debounce={6000}
       value={search}
       onChange={handleOnChange}
       loadOptions={loadOptions}
